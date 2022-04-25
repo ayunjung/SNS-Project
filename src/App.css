@@ -1,38 +1,783 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  font-family: sans-serif;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MainTop */
+.title {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  color: #fff;
+  font-family: "Glory", serif;
+  font-size: 55px;
+  font-weight: 900;
+  background-color: #ffd966;
+  text-align: center;
+  vertical-align: middle;
+}
+.title > span {
+  display: inline-block;
+  margin: 10px;
+  cursor: default;
+}
+.logo {
+  display: inline-block;
+  margin: 10px;
+}
+.logout {
+  display: inline;
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  line-height: 100px;
+}
+
+/* .main {
+  display: inline;
+  position: absolute;
+  right: 60px;
+} */
+
+/* login */
+.login-form {
+  width: 500px;
+  height: 300px;
+  background-color: #fff2cc;
+  margin: 150px auto auto auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+.login-text {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: block;
+}
+#login {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  background-color: #ffd966;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: block;
+}
+.login-signup {
+  text-align: center;
+}
+.login-signup a {
+  font-size: 15px;
+  color: #595959;
+}
+
+/* signup */
+.signup-form {
+  width: 500px;
+  background-color: #fff2cc;
+  margin: 50px auto auto auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+.signup-title {
+  width: 200px;
+  background-color: #ffd966;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 auto 20px;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+label {
+  font-size: 15px;
+}
+.id-text input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+#id-account {
+  width: 75%;
+}
+#id-check {
+  width: 25%;
+  height: 35px;
+  border-radius: 5px;
+}
+.birth input {
+  width: 110px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 3px;
+}
+#year {
+  margin-left: 30px;
+}
+.gender input {
+  margin: 10px 0 10px 60px;
+}
+#signup {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ffd966;
+  margin: 10px auto 0;
+  text-align: center;
+}
+.alert-message {
+  margin: 0 10px;
+  color: #f09090;
+  font-size: 14px;
+  font-weight: 900;
+}
+.signupok {
+  text-align: center;
+  margin: 200px;
+}
+.tologin {
+  display: inline-block;
+  min-width: 80px;
+  padding: 10px;
+  margin: 50px;
+  font-size: 18px;
+  border: 1px solid #92d050;
+  border-radius: 2px;
+  background: #92d050;
+  color: #fff;
+}
+
+/* MainBtn */
+.container {
+  width: 1000px;
+  display: flex;
+  margin: 50px auto;
+}
+.profile,
+.mainbox {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+.profile {
+  padding-top: 50px;
+}
+.profile > img {
+  width: 250px;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.name {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  cursor: default;
+}
+.intro {
+  margin: 5px 0 15px;
+  text-align: center;
+  font-size: 20px;
+  cursor: default;
+}
+.change {
+  width: 120px;
+  padding: 3px;
+  background-color: #92d050;
+  border: 1px solid #92d050;
+  border-radius: 3px;
+  color: #fff;
+}
+.main-btn {
+  width: 500px;
+  border: 3px solid #ffd966;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 40px auto;
+  text-align: center;
+}
+.main-btn > a span {
+  padding: 20px;
+  display: block;
+  font-size: 25px;
+  color: #000;
+}
+.main-btn:hover {
+  width: 500px;
+  text-align: center;
+  border: 3px solid #ffd966;
+  background-color: #ffd966;
+  border-radius: 5px;
+  margin: 40px auto;
+}
+.main-btn > a span:hover {
+  font-size: 25px;
+  color: #fff;
+}
+
+/* top btn */
+.top-btn {
+  width: 100%;
+  text-align: center;
+}
+.currentbtn {
+  width: 200px;
+  border: 3px solid #ffd966;
+  border-radius: 5px;
+  background-color: #ffd966;
+  margin: 15px 40px 0;
+  text-align: center;
+}
+.currentbtn > a {
+  text-decoration: none;
+}
+.currentbtn > a span {
+  padding: 10px 20px;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+.otherbtn {
+  width: 200px;
+  border: 3px solid #ffd966;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 15px 40px 0;
+  text-align: center;
+}
+.otherbtn > a {
+  text-decoration: none;
+}
+.otherbtn > a span {
+  padding: 10px 20px;
+  font-size: 25px;
+  color: #000;
+  display: block;
+}
+.top-btn > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* main틀 */
+#mainbox {
+  width: 1000px;
+  margin: 20px auto auto auto;
+  /* text-align: center; */
+}
+
+/* 목록, 추가, 삭제 버튼 */
+.add_btn {
+  margin: 10px;
+  text-align: center;
+}
+.add_btn a {
+  display: inline-block;
+  min-width: 80px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 18px;
+}
+.add_btn a:first-child {
+  margin-left: 0;
+}
+.add_btn a.on {
+  border: 1px solid #92d050;
+  background: #92d050;
+  color: #fff;
+}
+#delete_button {
+  background-color: #fff;
+  min-width: 80px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* blog */
+.blog_list {
+  width: 100%;
+  height: 430px;
+  border-top: 2px solid #000;
+}
+.blog_top {
+  border-bottom: 2px solid #999;
+}
+.blog_top > div {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+}
+#bplist > li {
+  border-bottom: 1px solid #ddd;
+}
+#bplist > li:last-child {
+  border-bottom: 2px solid #000;
+}
+#bplist > li div {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+}
+.blog_list .blog_num {
+  width: 10%;
+}
+.blog_list .blog_title {
+  width: 70%;
+}
+.blog_list .blog_date {
+  width: 10%;
+}
+/* .blog_list {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.blog_list > div {
+  border-bottom: 1px solid #ddd;
+}
+.blog_list > div.top {
+  border-bottom: 1px solid #999;
+}
+.blog_list > div:last-child {
+  border-bottom: 1px solid #000;
+}
+.blog_list > div > div {
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+}
+.blog_list > .blog_top > div {
+  font-weight: 600;
+}
+.blog_list .blog_num {
+  width: 10%;
+}
+.blog_list .blog_title {
+  width: 70%;
+}
+.blog_list .blog_title > a {
+  display: block;
+}
+.blog_list .blog_date {
+  width: 10%;
+} */
+.blog_page {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0;
+}
+.blog_page a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  border-left: 0;
+  font-size: 1.2rem;
+}
+.blog_page a:first-child {
+  border-left: 1px solid #999;
+}
+.blog_page a.num.on {
+  border: 1px solid #000;
+  color: #fff;
+  background: #000;
+}
+
+/* blogview */
+.blogview {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.blogview .blogview_title {
+  padding: 20px 15px;
+  border-bottom: 1px dashed #ddd;
+  font-size: 20px;
+}
+.blogview .blogview_info {
+  padding: 15px;
+  border-bottom: 1px solid #999;
+}
+.blogview .blogview_info dl {
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+}
+.blogview .blogview_info dl:first-child {
+  padding-left: 0;
+}
+.blogview .blogview_info dl::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #ddd;
+}
+.blogview .blogview_info dl:first-child:before {
+  display: none;
+}
+.blogview .blogview_info dl dt,
+.blogview .blogview_info dl dd {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+}
+.blogview .blogview_info dl dt {
+  font-weight: 600;
+}
+.blogview .blogview_info dl dd {
+  margin-left: 10px;
+  color: #777;
+}
+.blogview .blogview_cont {
+  padding: 15px;
+  border-bottom: 2px solid #000;
+  line-height: 160%;
+}
+
+/* blogupload */
+.blogupload {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.blogupload .blogupload_title {
+  padding: 15px;
+  border-bottom: 1px solid #000;
+}
+.blogupload .blogupload_title dt,
+.blogupload .blogupload_title dd {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blogupload .blogupload_title dt {
+  width: 100px;
+}
+.blogupload .blogupload_title dd {
+  width: calc(100% - 100px);
+}
+.blogupload .blogupload_title input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.blogupload .blogupload_write {
+  border-bottom: 2px solid #000;
+}
+.blogupload .blogupload_write textarea {
+  display: block;
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 0;
+  resize: vertical;
+}
+
+/* gallery */
+#gallery_mainbox {
+  width: 1100px;
+  margin: 20px auto;
+}
+.photozip {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.cell {
+  /* margin: 0; */
+  display: inline-block;
+  vertical-align: middle;
+}
+.cell > a img {
+  width: 250px;
+  height: 250px;
+}
+.gallery_btn {
+  text-align: right;
+  padding-right: 40px;
+}
+.gallery_btn a.on {
+  border: 1px solid #92d050;
+  border-radius: 2px;
+  background: #92d050;
+  color: #fff;
+  padding: 5px;
+}
+.gallery_cont {
+  margin-top: 20px;
+}
+
+/* galleryupload */
+.galleryupload {
+  text-align: center;
+}
+.galleryupload_write {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+}
+.photoupload {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+.photoupload label {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  padding: 200px;
+  color: #999;
+  font-size: 50px;
+  line-height: normal;
+  vertical-align: top;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.photoupload input[type="file"] {
+  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.galleryupload_write textarea {
+  width: 100%;
+  height: 450px;
+  padding: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* galleryveiw */
+.gallerybox {
+  text-align: center;
+}
+.gallerycontent,
+.galleryphoto {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 450px;
+  height: 450px;
+}
+.galleryphoto > img {
+  width: 100%;
+  height: 100%;
+}
+.gallerycontent {
+  overflow: auto;
+  text-align: left;
+  padding: 5px;
+}
+.gallerycomment > input {
+  width: 900px;
+}
+
+/* galleryreload */
+.photoreload {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 450px;
+  height: 450px;
+}
+.photoreload > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* calender */
+.calender {
+  width: 1500px;
+  margin: 5px 10px;
+  padding-left: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.header a {
+  display: inline-block;
+  width: 80px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #92d050;
+  border-radius: 2px;
+  background: #92d050;
+  color: #fff;
+  position: absolute;
+  left: 12%;
+}
+
+.year-month {
+  font-size: 25px;
+}
+
+.nav {
+  display: flex;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.nav-btn {
+  width: 28px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.go-today {
+  width: 75px;
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+
+.calenderdays {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.days {
+  display: flex;
+  margin: 0 10px 5px;
+}
+
+.day {
+  width: calc(100% / 7);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dates {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+  height: 480px;
+  border-top: 1px solid #333333;
+  border-right: 1px solid #333333;
 }
 
-.App-link {
-  color: #61dafb;
+.date {
+  width: calc(100% / 7);
+  padding: 15px;
+  text-align: right;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+  color: #d13e3e;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+  color: #396ee2;
+}
+
+.other {
+  opacity: 0.3;
+}
+
+.today {
+  position: relative;
+  color: #fff;
+}
+
+.today::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #ff0000;
+  border-radius: 50%;
+  content: "";
+}
+
+/* friends */
+.friends-list {
+  overflow: auto;
+  width: 1000px;
+  height: 530px;
+  border: 1px solid #000;
+  padding: 0;
+}
+.friends-list > li {
+  border: 1px solid #000;
+  height: 80px;
+}
+.friends-list > li:hover {
+  background-color: #bbb;
+  border: 1px solid #000;
+  height: 80px;
+}
+.friends-list > li a span {
+  padding: 28px 20px;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .blog_list {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  .blog_list .blog_num {
+    display: none;
+  }
+  .blog_list .blog_date {
+    width: 40%;
   }
 }
