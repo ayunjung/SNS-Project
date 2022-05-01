@@ -8,7 +8,7 @@ function CalendarPage() {
     return (
         <>
             <MainTop />
-            <TopBar />
+            <TopBar calendar={true} />
             <CalendarMain />
         </>
     );

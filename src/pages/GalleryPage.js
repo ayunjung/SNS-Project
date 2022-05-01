@@ -8,7 +8,7 @@ function GalleryPage() {
     return (
         <>
             <MainTop />
-            <TopBar />
+            <TopBar gallery={true} />
             <PhotoList />
         </>
     );

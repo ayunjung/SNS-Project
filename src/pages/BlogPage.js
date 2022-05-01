@@ -8,7 +8,7 @@ function BlogPage() {
     return (
         <>
             <MainTop />
-            <TopBar />
+            <TopBar blog={true} />
             <BlogList />
         </>
     );

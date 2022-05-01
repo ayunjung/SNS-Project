@@ -8,7 +8,7 @@ function FriendsPage() {
     return (
         <>
             <MainTop />
-            <TopBar />
+            <TopBar friends={true} />
             <FriendsList />
         </>
     );

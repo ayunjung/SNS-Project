@@ -240,45 +240,11 @@ label {
 }
 
 /* top btn */
-.top-btn {
+.topbtn_box {
   width: 100%;
   text-align: center;
 }
-.currentbtn {
-  width: 200px;
-  border: 3px solid #ffd966;
-  border-radius: 5px;
-  background-color: #ffd966;
-  margin: 15px 40px 0;
-  text-align: center;
-}
-.currentbtn > a {
-  text-decoration: none;
-}
-.currentbtn > a span {
-  padding: 10px 20px;
-  font-size: 25px;
-  color: #fff;
-  display: block;
-}
-.otherbtn {
-  width: 200px;
-  border: 3px solid #ffd966;
-  border-radius: 5px;
-  background-color: #fff;
-  margin: 15px 40px 0;
-  text-align: center;
-}
-.otherbtn > a {
-  text-decoration: none;
-}
-.otherbtn > a span {
-  padding: 10px 20px;
-  font-size: 25px;
-  color: #000;
-  display: block;
-}
-.top-btn > div {
+.topbtn_box > div {
   display: inline-block;
   vertical-align: middle;
 }
