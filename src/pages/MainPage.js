@@ -1,15 +1,15 @@
 import React from 'react';
 import MainTop from '../components/MainTop';
-import MainBtn from '../components/MainBtn';
+import Main from '../components/Main';
 
-function CommunityPage() {
+function MainPage() {
 
     return (
-        <>
+        <React.Fragment>
             <MainTop />
-            <MainBtn />
-        </>
+            <Main />
+        </React.Fragment>
     );
 }
 
-export default CommunityPage
+export default MainPage

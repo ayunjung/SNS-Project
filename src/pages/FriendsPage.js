@@ -6,11 +6,11 @@ import FriendsList from '../components/FriendsList';
 function FriendsPage() {
 
     return (
-        <>
+        <React.Fragment>
             <MainTop />
             <TopBar friends={true} />
             <FriendsList />
-        </>
+        </React.Fragment>
     );
 }
 

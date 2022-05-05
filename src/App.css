@@ -80,10 +80,6 @@ a {
 .login-signup {
   text-align: center;
 }
-.login-signup a {
-  font-size: 15px;
-  color: #595959;
-}
 
 /* signup */
 .signup-form {

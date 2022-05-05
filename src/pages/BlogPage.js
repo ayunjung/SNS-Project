@@ -6,11 +6,11 @@ import BlogList from '../components/BlogList';
 function BlogPage() {
 
     return (
-        <>
+        <React.Fragment>
             <MainTop />
             <TopBar blog={true} />
             <BlogList />
-        </>
+        </React.Fragment>
     );
 }
 

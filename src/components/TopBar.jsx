@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const TopBar = (props) => {
 
@@ -61,18 +62,18 @@ const TopBar = (props) => {
     `
 
     return (
-        <div class="topbtn_box">
+        <div className="topbtn_box">
             <TopBtnBlog blog={props.blog}>
-                <a href="./blog.html"><BlogSpan blog={props.blog}>일기장</BlogSpan></a>
+                <Link to="./BlogPage"><BlogSpan blog={props.blog}>일기장</BlogSpan></Link>
             </TopBtnBlog>
             <TopBtnGallery gallery={props.gallery}>
-                <a href="./gallery.html"><GallerySpan gallery={props.gallery}>사진첩</GallerySpan></a>
+                <Link to="./GalleryPage"><GallerySpan gallery={props.gallery}>사진첩</GallerySpan></Link>
             </TopBtnGallery>
             <TopBtnCalendar calender={props.calender}>
-                <a href="./calender.html"><CalendarSpan calender={props.calender}>캘린더</CalendarSpan></a>
+                <Link to="./CalendarPage"><CalendarSpan calender={props.calender}>캘린더</CalendarSpan></Link>
             </TopBtnCalendar>
             <TopBtnFriends friends={props.friends}>
-                <a href="./friends.html"><FriendsSpan friends={props.friends}>친구목록</FriendsSpan></a>
+                <Link to="./FriendsPage"><FriendsSpan friends={props.friends}>친구목록</FriendsSpan></Link>
             </TopBtnFriends>
         </div>
     )

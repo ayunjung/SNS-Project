@@ -2,14 +2,14 @@ import React from 'react';
 import MainTop from '../components/MainTop';
 import Join from '../components/Join';
 
-function CommunityPage() {
+function JoinPage() {
 
     return (
-        <>
+        <React.Fragment>
             <MainTop />
             <Join />
-        </>
+        </React.Fragment>
     );
 }
 
-export default CommunityPage
+export default JoinPage

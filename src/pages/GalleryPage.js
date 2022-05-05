@@ -6,11 +6,11 @@ import PhotoList from '../components/PhotoList';
 function GalleryPage() {
 
     return (
-        <>
+        <React.Fragment>
             <MainTop />
             <TopBar gallery={true} />
             <PhotoList />
-        </>
+        </React.Fragment>
     );
 }
 

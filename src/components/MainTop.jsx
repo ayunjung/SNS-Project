@@ -1,19 +1,15 @@
-//https://react-icons.github.io/react-icons/#/
 import React from 'react';
-import { IoLogOut } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+import LogoutLogo from './LogoutLogo';
 
 const MainTop = () => {
 
     return (
-      <div class="title">
-        <a class="logo" href="./MainPage">Diary</a>
-        <div class="logout">
-          <a href="./LoginPage">
-            <IoLogOut width="40px" height="40px" color='white'/>
-          </a>
-        </div>
+      <div className="title">
+        <Link className="logo" to="./MainPage">Diary</Link>
+        <LogoutLogo />
       </div>
-    )
+    );
 }
 
 export default MainTop

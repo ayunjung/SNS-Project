@@ -5,27 +5,27 @@ const FriendsList = () => {
     return (
         <main id="mainbox">
             <div>
-                <ul class="friends-list">
+                <ul className="friends-list">
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 <li>
-                    <a href="main.html"><span>정아윤</span></a>
+                    <a href="./MainPage"><span>정아윤</span></a>
                 </li>
                 </ul>
             </div>
