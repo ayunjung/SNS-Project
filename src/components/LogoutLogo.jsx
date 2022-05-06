@@ -4,6 +4,7 @@ import { IoLogOut } from "react-icons/io5";
 
 const LogoutLogo = () => {
 
+    if (window.location.pathname === '/') return null;
     if (window.location.pathname === '/LoginPage') return null;
     if (window.location.pathname === '/JoinPage') return null;
   

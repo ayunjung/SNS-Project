@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import LogoutLogo from './LogoutLogo';
+import MainLogo from './MainLogo';
+
 
 const MainTop = () => {
 
     return (
       <div className="title">
-        <Link className="logo" to="./MainPage">Diary</Link>
+        <MainLogo />
         <LogoutLogo />
       </div>
     );

@@ -1,0 +1,55 @@
+CREATE SCHEMA `project1_sns` DEFAULT CHARACTER SET utf8 ;
+
+CREATE TABLE `project1_sns`.`user` (
+  `userNum` INT NOT NULL AUTO_INCREMENT,
+  `userID` CHAR(60) NOT NULL,
+  `userPassword` CHAR(60) NOT NULL,
+  `userName` CHAR(20) CHARACTER SET 'utf8' NOT NULL,
+  `userBirth` DATE NOT NULL,
+  `userGender` TINYINT(1) NOT NULL,
+  `userIntro` VARCHAR(100) NULL,
+  PRIMARY KEY (`userNum`))
+ENGINE = InnoDB;
+
+
+CREATE TABLE `project1_sns`.`post` (
+  `postType` TINYINT(1) NOT NULL,
+  `postNum` INT NOT NULL AUTO_INCREMENT,
+  `userNum` INT NOT NULL,
+  `postTitle` VARCHAR(100) CHARACTER SET 'utf8' NOT NULL,
+  `postWriteDate` DATE NOT NULL,
+  `postContent` VARCHAR(5000) CHARACTER SET 'utf8' NOT NULL,
+  `postShow` TINYINT(1) NOT NULL,
+  PRIMARY KEY (`postNum`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+CREATE TABLE `project1_sns`.`comment` (
+  `postType` TINYINT(1) NOT NULL,
+  `postNum` INT NOT NULL,
+  `commentNum` INT NOT NULL AUTO_INCREMENT,
+  `userID` INT NOT NULL,
+  `commentDate` DATE NOT NULL,
+  `commentContent` VARCHAR(1000) CHARACTER SET 'utf8' NOT NULL,
+  `commentShow` TINYINT(1) NOT NULL,
+  PRIMARY KEY (`commentNum`))
+
+
+CREATE TABLE `project1_sns`.`friend` (
+  `requestuser` INT NOT NULL,
+  `accecptuser` INT NOT NULL,
+  `friendaccept` TINYINT(1) NOT NULL,
+  PRIMARY KEY (`requestuser`));
+
+
+CREATE TABLE `project1_sns`.`photo` (
+  `postType` TINYINT(1) NOT NULL,
+  `postNum` INT NOT NULL,
+  `photoNum` INT NOT NULL AUTO_INCREMENT,
+  `photoAddress` VARCHAR(800) NOT NULL,
+  PRIMARY KEY (`photoNum`));
+
+
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;

@@ -110,31 +110,29 @@ label {
   margin: 5px 0 10px 0;
   border: 1px solid gray;
   border-radius: 5px;
+  font-size: 18px;
+}
+#id-box {
+  display: flex;
 }
 #id-account {
   width: 75%;
 }
 #id-check {
   width: 25%;
-  height: 35px;
-  border-radius: 5px;
-}
-.birth input {
-  width: 110px;
   height: 40px;
-  padding: 5px;
-  border: 1px solid gray;
   border-radius: 5px;
-  margin: 10px 3px;
-}
-#year {
-  margin-left: 30px;
+  margin-left: 5px;
+  font-size: 15px;
 }
 .gender input {
   margin: 10px 0 10px 60px;
 }
+.join-btnbox {
+  display: flex;
+}
 #signup {
-  width: 100%;
+  width: 45%;
   height: 40px;
   font-size: 18px;
   color: #fff;
@@ -144,11 +142,24 @@ label {
   margin: 10px auto 0;
   text-align: center;
 }
+#join-cancel {
+  width: 45%;
+  height: 40px;
+  font-size: 18px;
+  color: #000;
+  border: 0;
+  border-radius: 5px;
+  background-color: #e9e9e9;
+  margin: 10px auto 0;
+  text-align: center;
+  line-height: 40px;
+}
 .alert-message {
   margin: 0 10px;
   color: #f09090;
   font-size: 14px;
   font-weight: 900;
+  display: none;
 }
 .signupok {
   text-align: center;
