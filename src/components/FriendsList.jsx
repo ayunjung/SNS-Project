@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FriendsList = () => {
 
@@ -6,27 +7,27 @@ const FriendsList = () => {
         <main id="mainbox">
             <div>
                 <ul className="friends-list">
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
-                <li>
-                    <a href="./MainPage"><span>정아윤</span></a>
-                </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
+                    <li>
+                        <Link to="./MainPage"><span>정아윤</span></Link>
+                    </li>
                 </ul>
             </div>
         </main>

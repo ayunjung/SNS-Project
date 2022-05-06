@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BlogList = () => {
 
@@ -12,39 +13,53 @@ const BlogList = () => {
                 </div>
                 <ul id="bplist">
                     <li>
-                        <div className="blog_num">1</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">1</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">2</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">2</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">3</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">3</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">4</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">4</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">5</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">5</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">6</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">6</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                     <li>
-                        <div className="blog_num">7</div>
-                        <div className="blog_title"><a href="blogview.html">글 제목</a></div>
-                        <div className="blog_date">2021.11.14</div>
+                        <Link to="./BlogViewPage">
+                            <div className="blog_num">7</div>
+                            <div className="blog_title">글 제목</div>
+                            <div className="blog_date">2021.11.14</div>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -60,7 +75,7 @@ const BlogList = () => {
                 <a href="/" className="btn last">〉〉</a>
             </div>
             <div className="add_btn">
-                <a href="blogupload.html" className="on">등록</a>
+                <Link to="./BlogWritePage" className="on">글쓰기</Link>
             </div>
         </main>
     )
