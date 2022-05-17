@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
 
@@ -13,16 +14,16 @@ const Main = () => {
             </div>
             <div className="mainbox">
                 <div className="main-btn">
-                    <a href="/BlogPage"><span>일기장</span></a>
+                    <Link to="/BlogPage"><span>일기장</span></Link>
                 </div>
                 <div className="main-btn">
-                    <a href="/GalleryPage"><span>사진첩</span></a>
+                    <Link to="/GalleryPage"><span>사진첩</span></Link>
                 </div>
                 <div className="main-btn">
-                    <a href="/CalenderPage"><span>캘린더</span></a>
+                    <Link to="/CalendarPage"><span>캘린더</span></Link>
                 </div>
                 <div className="main-btn">
-                    <a href="/FriendsPage"><span>친구목록</span></a>
+                    <Link to="/FriendsPage"><span>친구목록</span></Link>
                 </div>
             </div>
         </div>
