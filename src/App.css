@@ -100,6 +100,9 @@ a {
   border-radius: 5px;
   text-align: center;
 }
+.id-text {
+  margin-top: 10px;
+}
 label {
   font-size: 15px;
 }
@@ -107,7 +110,6 @@ label {
   width: 100%;
   height: 40px;
   padding: 5px;
-  margin: 5px 0 10px 0;
   border: 1px solid gray;
   border-radius: 5px;
   font-size: 18px;
@@ -154,12 +156,17 @@ label {
   text-align: center;
   line-height: 40px;
 }
-.alert-message {
-  margin: 0 10px;
-  color: #f09090;
+.success {
   font-size: 14px;
+  color: #8f8c8b;
   font-weight: 900;
-  display: none;
+  margin-top: 3px;
+}
+.error {
+  font-size: 14px;
+  color: #f09090;
+  font-weight: 900;
+  margin-top: 3px;
 }
 .signupok {
   text-align: center;
@@ -566,8 +573,8 @@ label {
   height: 100%;
 }
 
-/* calender */
-.calender {
+/* calender */ 
+/* .calender {
   width: 1500px;
   margin: 5px 10px;
   padding-left: 10px;
@@ -681,7 +688,7 @@ label {
   background-color: #ff0000;
   border-radius: 50%;
   content: "";
-}
+} */
 
 /* friends */
 .friends-list {
