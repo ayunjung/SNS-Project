@@ -36,7 +36,7 @@ const Join = () => {
 
     // 이메일
     const onChangeID = useCallback((e) => {
-        const idRegex =	/^[a-zA-Z0-9_-]{6,12}$/
+        const idRegex =	/^[a-zA-Z][a-zA-Z0-9_-]{6,12}$/
         const idCurrent = e.target.value
         setID(idCurrent)
 
@@ -56,7 +56,7 @@ const Join = () => {
         setPassword(passwordCurrent)
 
         if (!passwordRegex.test(passwordCurrent)) {
-        setPasswordMessage('8자 이상의 숫자+영문자+특수문자 조합으로 입력하십시오.')
+        setPasswordMessage('8자 이상의 영문자+숫자+특수문자 조합으로 입력하십시오.')
         setIsPassword(false)
         } else {
         setPasswordMessage('안전한 비밀번호입니다.')
